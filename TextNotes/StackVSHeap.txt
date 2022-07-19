@@ -1,0 +1,28 @@
+Stack:
+1. Memory stack is of fixed size.
+2. System should know how much it needs to allocate at compile time.
+3. Memory size cannot be changed at run time.
+4. Memory allocation and de-allocation are automatically done by compiler.
+5. Handling stack frame is less costly than heap.
+6. Main Issue - Memory Shortage.
+7. Allocation example - int a = 10;
+
+
+Heap:
+1. Memory heap is of variable size.
+2. We can allocate and de-allocate memory manually.
+3. Heap is also known as free store.
+4. Handling heap frame is costlier than stack.
+5. Main Issue - Fragmentation.
+6. Allocation example - int *a = new int();  for array int a = new int[10];
+with the above statement a memory will be allocated for int variable in heap
+but a will not be directly stored in heap rather it will be store in stack pointing 
+to the address of the allocated memory in heap.
+a will act as a global variable.
+7. De-allocation example - delete a; for array delete[] a;
+
+
+Dangling Pointer - It occurs at the time of object destruction when the object
+is deleted or de-allocated from memory without modifying the value of the pointer.
+OR
+Pointer which points to the memory address in heap which doesn't have any value.

@@ -1,0 +1,37 @@
+****Ordered Set****
+a) Single Set
+- Contains unique elements
+- Implemented using balanced BST
+- Elements are in sorted order
+- Random access is not possible, i.e. you cannot get i'th 
+element in O(1) / O(log n) time
+- Present in #include<set> header file.
+
+b) Multi Set
+- Can contains duplicate elements
+- implemented using balanced BST
+- Elements are in sorted order,
+_ Random access is not possible, i.e. you cannot get i'th
+element in O(1) / O(log n) time
+- Present in #include<set> header file.
+
+****Unordered Set****
+- Contains unique elements
+- Implemented using a hashing
+- Elements are not in sorted order
+- Random access is not possible, i.e. you cannot get i'th
+element is O(1)
+- Present in #include<unordered_set>header file
+
+
+****Time Complexities****
+1. For Single Set and Multi Set:
+a) Insertion: O(log n)
+b) Deletion: O(log n)
+c) Lower/Upper bound: O(log n)
+
+2. For Unordered Set:
+a) Insertion: O(1) in avg case, O(n) in worst case
+b) Deletion: O(1) in avg case, O(n) in worst case 
+c) Lower/Upper bound: NA
+

@@ -1,0 +1,75 @@
+Component of a Graph:
+1. Node: These are the states or vertex. For instance, users in case of facebook.
+2. Edges: Links between states in a graph. For instance, connections between users.
+
+Now Edges are of two types:
+1. Undirected: Two way Edges
+2. Directed: One way Edges
+
+Representation of graph:
+1. With Adjacency Matrix
+2. With Adjacency List
+
+Difference between Adjacency Matrix and Adjacency List:
+Adjacency Matrix:
+1. 2D array, where a[i][j]=1 if there is an edge from
+i to j else a[i][j]=0.
+
+0   0   0   1
+0   0   0   1
+0   0   0   1
+1    1   1   0
+
+
+Adjacency List:
+1. Array of lists, where each a[i] is a list of nodes Xi that are 
+reachable form i.
+
+a -> [b,d,e]
+b -> [c]
+c -> [d]
+d -> [a]
+e -> []
+
+We can also say that the neighbouring vertex of a are b,d,and e
+
+
+Searches in a Graph:
+1. Depth First Search:
+It has three parts:
+a. Preorder: First time when call comes on the node.
+b. Inorder: When the call works inside the subtree (in DFS Tree) of that node.
+c. Postorder: After working on the subtree, call comes
+back on the node. After this, call won't come on the same node.
+*****DFS implemented using Stacks*****
+
+2. Breadth First Search:
+***** BFS implemented using Queues *****
+Different properties of components of graph
+a. Weighted Nodes - Values are associated with  nodes.
+b. Weighted Edges - Values are associated with edges.
+
+
+Bipartite Graph:
+1. Its vertices can be divided into two disjoint and independent sets U and V
+such that every edge connects a vertex in U to one in V.
+2. The graph does not contain any odd-length cycles.
+3. The graph is 2 colorable.
+
+Spanning Tree:
+Given an undirected and connected graph G(V,E), 
+a Spanning tree of the graph G is a tree that spans
+G(that is, it includes every vertex of G) and is a subgraph 
+of G(every edge in tree belongs to G).
+
+The cost of the spanning tree is the sum of the weights of all the 
+edges in the tree.
+There can be many spanning trees.
+** If there are N vertices in the graph, then there can be N-1 edges in the tree.
+
+Minimum Spanning Tree:
+Minimum spanning tree is the spanning tree where the cost is Minimum
+among all the spanning trees.
+There also can be many minimum spanning trees.
+
+Algorithms for MST - Prim's Algorithm and Kruskal's Algorithm

@@ -1,0 +1,27 @@
+Polymorphism - Polymorphism is the ability of an object to take on many forms.
+
+Types of Polymorphism:
+Polymorphism -
+                             |
+                             |
+                             |
+                             |
+                             --------- Compile Time----
+                             |                                                  |
+                             |                                                  |
+                             |                                                  --------- Function Overloading
+                             |                                                  |
+                             |                                                  |
+                             |                                                  --------- Operator Overloading
+                             |
+                             |
+                             |
+                             --------- Run Time--------
+                                                                                |
+                                                                                |
+                                                                                |
+                                                                                --------- Virtual Functions (or Function Overriding)
+
+Virtual Functions - A function that is declared in a base class but defined in a derived class.
+For this we use Virtual Keyword.
+The function which has Virtual keyword is not called directly by base class but it is called indirectly.

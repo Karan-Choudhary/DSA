@@ -1,0 +1,22 @@
+Catalan Numbers:
+Catalan numbers are a sequence of natural numbers that occur in various counting
+problems, often involving recursively defined objects.
+Their closed form is in terms of binomial coefficients:
+C_n = (1/(n+1)) (2n C_n) = Summation(C_i C_n-i, i=0 to n-1)
+
+Used in different counting problems like:
+1. You are given with a n number of nodes, find the number of valid BSTs
+that can be constructed using these nodes.
+2. You are given with n vertices close polygon, find the number of triangles
+that can be formed by placing cuts in the polygon.
+
+* The value of 0th Catalan number is always fixed
+    C_0 = 1
+* The value of 1th Catalan number is also fixed
+    C_1 = 1
+* C_2 = C_0xC_1 + C_1xC_0 = 2
+* C_3 = C_0xC_2 + C_1xC_1 + C_2xC_0 = 5 
+* C_4 = C_0xC_3 + C_1xC_2 + C_2xC_1 + C_3xC_0 = 14
+
+Here we observe that the value of 1st coefficient is from 0 to n-1
+and the value of 2nd coefficient is from n-1 to 0.

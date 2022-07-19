@@ -1,0 +1,10 @@
+Character Arrays:
+1. Need to know size beforehand.
+2. Larger size required for operations (concatenate or append).
+3. Terminated with a special character '\0'
+
+Strings:
+1. No need to know size beforehand.
+2. Perform operations like concatenation and append is easier.
+3. std::string stores its data internally in the form of a null-terminated 
+C-string, but in normal usage does not allow you to access the null terminator

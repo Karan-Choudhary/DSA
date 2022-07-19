@@ -1,0 +1,16 @@
+Subarray:
+Continuous part of the array
+Ex:
+Suppose there is an array a={1, 2, 0, 7, 2, 0, 2}
+So it's subarray can be sa={2, 0, 7, 2}
+Number of Subarrays of an array with n elements = nC2 + n = n(n+1)/2
+
+Subsequence:
+A Subsequence is a sequence that can be derived an array by selecting zero or more
+elements with changing the order of the remaining elements.
+Ex:
+Suppose there is an array a={1, 2, 0, 7, 2, 0, 2}
+So it's subsequence can be sa={2, 7, 2}
+Number of subsequences of an array with n elements = pow(2, n)
+
+** Every subarray is a subsequence but every subsequence is not a subarray

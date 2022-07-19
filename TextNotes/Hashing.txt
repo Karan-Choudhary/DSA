@@ -1,0 +1,63 @@
+Hashing
+
+=> Why Hashing??
+=> To play with the indices of the elements.
+
+=> Problem
+=> Storing indices of such large elements because array's limit is 
+only 10^8 (that too global).
+
+=>Collision
+=> When two elements have same key after hashing
+
+
+
+=> Collision Handling
+
+=> Separate Chaining: If Collision, create chain of values at same key
+using linked list. 
+Worst Case Time Complexity: O(n)
+=> Load factor: Suppose we have n elements in our array and we also 
+have B number of keys.
+We have to put n elements on B number of keys.
+                                        ------
+So load factor will be | n/B.|
+                                        ------
+=> Open Addressing: If Collision, do probing
+=> Probing: Using a second argument called probe number in the hash function.
+Probe number depends on key, hence given by P(k).
+
+=> Types of Probing:
+1. Linear Probing: When the probe number is the linear function of key.
+----------------
+| P(k) = a*k + b |
+----------------
+2. Quadratic Probing: When the probe number is the quadratic function of key.
+-------------------------
+| P(k) = a*(k^2) + b*k +c |
+-------------------------
+3. Double Hashing:
+----------------
+| P(k,x) = k*h(x)|
+----------------
+where h(x) is a secondary hash function.
+
+
+
+=> Hash STL : key-value pair
+
+1. Maps:
+Insertion: O(logn)
+Accessing: O(logn)
+Deletion: O(logn)
+Implemented using Red-Black Trees.
+Syntax:
+map<key_datatype,value_datatype> m;
+
+2. Unordered Maps:
+Insertion: O(1)
+Accessing: O(1)
+Deletion: O(n)
+Implemented using Hash Tables (basically array of buckets).
+Syntax:
+unordered_map<key_datatype,value_datatype> m;

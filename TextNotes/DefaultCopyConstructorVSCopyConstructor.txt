@@ -1,0 +1,15 @@
+Default Copy Constructor
+It uses Shallow Copy to create a new object
+
+Copy Constructor Made by us:
+It uses Deep Copy to create a new object
+
+Shallow Copy:
+Suppose we have a object and it have some data members.
+These data members are pointing to some dynamically allocated memory.
+In Shallow copy, the pointer to the dynamically allocated memory is copied but
+the locations to which they are pointing are not copied.
+
+Deep Copy:
+The pointer to the dynamically allocated memory is copied as well as 
+the locations to which they are pointing are also copied.

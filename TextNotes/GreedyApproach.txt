@@ -1,0 +1,8 @@
+Greedy Technique:
+At present, which seems best, take it.
+
+Definition: A greedy technique is a technique that makes the best possible choice at each step.
+
+General things to remember in Greedy Technique:
+1. Generally, sorting is done first while applying greedy technique.
+2. Sometimes we do not realize that we are applying greedy because it comes from inside.

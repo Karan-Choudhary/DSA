@@ -1,0 +1,89 @@
+Dynamic Programming
+Learn from past.
+If we can handle smaller problems then we use their learnings to
+solve a bigger problem
+
+Properties of Dynamic Programming:
+    1. Optimal Substructure:
+        If we can write a recurrence relation, then a problem is said to have
+    optimal substructure.
+    2. Overlapping Subproblems:
+        If our subproblems repeat, then a problem is said to have overlapping subproblems.
+
+Ways to handle Overlapping Subproblems:
+    1. Memoization (Top-Down):
+        A lookup table is maintained and checked before computation of 
+        any state. Recursion is involved.
+
+        Example:
+        int fib[200] = {-1};
+        int computeFib(int n)
+        {
+            if(n==0 || n==1)
+                return n;
+            if(fib[n]!=-1)
+                return fib[n];
+            
+            int res = fib[n-1] + fib[n-2];
+            ----------------------------------
+            | fib[n] = res; // memoization part   | <- Memoization
+            ----------------------------------
+            return res;
+        }
+
+
+    2. Tabulation (Bottom-Up):
+        Solution if built from base. It is an iterative process.
+
+        Example:
+        int n;
+        cin>>n;
+        vector<int> fib(n+1);
+        fib[1] = 0, fib[2] = 1;
+
+        ------------------------------------
+        | for(int i=2;i<=n;i++)                             |
+        |  {                                                                |
+        |       fib[i] = fib[i-1]+fib[i-2];                 |   <- Tabulation
+        |   }                                                               |
+        ------------------------------------    
+
+********Key points of Dynamic Programming********
+1. Minimization and Maximization problems are generally solved with DP
+where we want exhaustive solution. (Sometimes with binary search on Answer).
+2. "Find the number of ways" is also a very popular type of DP problems.
+3. Wherever we can form recurrence relation or given in question can be solved using DP.
+(Sometimes with matrix exponentiation).
+
+
+
+
+***********Terminologies in Graph***********
+Connected Component:
+Each connected graph in a disconnected graph is called a connected component.
+
+Cycle in a Graph:
+Path from a vertex to the same vertex in a graph is known as Cycle.
+
+Cyclic Graph:
+Graph that contains cycle is called cyclic graph.
+Acyclic Graph:
+Graph that does not contain cycle is called Acyclic Graph.
+
+Tree:
+Tree is connected acyclic Graph.
+Properties of Tree:
+1. Number of edges = n-1.
+2. There are no cycles present.
+3. Each node has path from every other vertex.
+
+DAG(Directed Acyclic Graph):
+It has directed edges
+It is acyclic i.e. no cycles are present.
+
+Complete Graph:
+A graph in which each vertex is connecter to every other by a direct edge.
+no. of edges in a complete car = (n(n-1))/2
+
+Weighted Graph:
+A graph with Weighted edges is called Weighted Graph

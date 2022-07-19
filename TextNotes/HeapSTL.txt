@@ -1,0 +1,9 @@
+Heaps STL
+1. MAXHEAP: priority_queue<int, vector<int>>
+2. MINHEAP: priority_queue<int, vector<int>, greater<int>>
+
+Complexities:
+1. Push: O(log n)
+2. Pop: O(log n)
+3. Top: O(1)
+4. Size: O(1)

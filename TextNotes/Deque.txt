@@ -1,0 +1,5 @@
+Deque - Doubly ended queue
+It is the mixture of stack and queue.
+1. Push and pop from the end.
+2. insert and delete from the start.
+3. header file: <deque>
