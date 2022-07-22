@@ -1,0 +1,1 @@
+{"name":"Local: SubarrayPalindrome","url":"c:\\Users\\kc510\\Documents\\6TH_SEM\\DSA\\ArrayChallenges\\SubarrayPalindrome.cpp","tests":[{"id":1652949442295,"input":"6 4\n2 3 5 1 1 5","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\kc510\\Documents\\6TH_SEM\\DSA\\ArrayChallenges\\SubarrayPalindrome.cpp","group":"local","local":true}
